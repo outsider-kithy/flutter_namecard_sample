@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'adress_screen.dart';
 import 'ocr_screen.dart';
 import 'add_screen.dart';
@@ -8,7 +9,27 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // 初回起動時にDB作成
   await DatabaseHelper().database;
+  //リモートAPIにpingを送る
+  await confirmPing();
   runApp(MyApp());
+}
+
+//リモートAPIにpingを送る
+Future confirmPing() async {
+  final url = Uri.parse(
+      'https://namepile.site/ping/');
+  final response = await http.get(
+    url,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  );
+  if (response.statusCode == 200) {
+    print(response.body);
+  } else {
+    throw Exception(
+        'リモートAPI起動確認: ${response.statusCode}');
+  }
 }
 
 class MyApp extends StatelessWidget {

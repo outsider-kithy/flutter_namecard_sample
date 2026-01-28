@@ -129,7 +129,7 @@ class _OcrScreenState extends State<OcrScreen> {
   //_detectedTextsを外部APIに送る
   Future<Map<String, dynamic>> detectInfo(List<String> texts) async {
     final url = Uri.parse(
-        'https://namepile-api-67202345724.asia-northeast1.run.app/detectInfo/');
+        'https://namepile.site/detectInfo/');
 
     final response = await http.post(
       url,
