@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'adress_screen.dart';
+import 'address_screen.dart';
 import 'ocr_screen.dart';
 import 'add_screen.dart';
 import 'database.dart';
@@ -54,7 +54,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    AdressScreen(),
+    AddressScreen(),
     OcrScreen(),
     AddScreen(),
   ];

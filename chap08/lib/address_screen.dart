@@ -3,12 +3,12 @@ import 'package:sqflite/sqflite.dart';
 import 'database.dart';
 import 'edit_namecard.dart';
 
-class AdressScreen extends StatefulWidget {
+class AddressScreen extends StatefulWidget {
   @override
-  _AdressScreenState createState() => _AdressScreenState();
+  _AddressScreenState createState() => _AddressScreenState();
 }
 
-class _AdressScreenState extends State<AdressScreen> {
+class _AddressScreenState extends State<AddressScreen> {
 
   late Database _db;
   Future<List<Map<String, dynamic>>>? _namecardListFuture;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'AdressScreen.dart';
-import 'OcrScreen.dart';
-import 'AddScreen.dart';
+import 'address_screen.dart';
+import 'ocr_screen.dart';
+import 'add_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +27,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    AdressScreen(),
+    AddressScreen(),
     OcrScreen(),
     AddScreen(),
   ];

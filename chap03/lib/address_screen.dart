@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AdressScreen extends StatefulWidget {
+class AddressScreen extends StatefulWidget {
   @override
-  _AdressScreenState createState() => _AdressScreenState();
+  _AddressScreenState createState() => _AddressScreenState();
 }
 
-class _AdressScreenState extends State<AdressScreen> {
+class _AddressScreenState extends State<AddressScreen> {
 
   @override
   Widget build(BuildContext context){
