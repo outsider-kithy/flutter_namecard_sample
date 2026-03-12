@@ -42,7 +42,6 @@ dependencies:
   image_picker: ^1.2.1
   image: ^4.7.1
   google_mlkit_text_recognition: ^0.15.0
-  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:
@@ -96,10 +95,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
-
-  fonts:
-      - family: NotoSansJP
-        fonts:
-          - asset: assets/fonts/NotoSansJP-Regular.ttf
-          - asset: assets/fonts/NotoSansJP-Bold.ttf
-            weight: 700
